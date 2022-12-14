@@ -1,0 +1,94 @@
+.container__principal{
+    max-width: 100rem;
+    margin: 2rem auto;
+    .content__principal{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: white;
+        padding: 2rem;
+        gap: 3rem;
+
+        .informacion{
+            display: flex;
+            flex-direction: column;
+            width: 30rem;
+            font-size: 2rem;
+
+            .title__info{
+                font-size: 4rem;
+                font-family: var(--font-card);
+            }
+
+            .paragraph__info{
+                color: #d1d1d1;
+            }
+
+            .btn__info{
+                text-decoration: none;
+                display: flex;
+                gap: 1rem;
+                padding-top: 5rem;
+                font-family: var(--font-card);
+                color: white;
+            }
+        }
+
+        .container__secondary{
+            display: flex;
+            align-items: center;
+
+            .image__relative{
+                position: relative;
+                width: 50rem;
+
+                .image-1{
+                    width: 100%;
+                }
+            }
+
+            .card{
+                position: absolute;
+                bottom: -4rem;
+                right: 4rem;
+                background-color: black;
+                width: 35rem;
+                box-shadow: 0 0 10rem 0 rgba(0,0,0,0.8);
+
+                .card__content{
+                    display: flex;
+                    padding: 2rem;
+                    gap: 2rem;
+                    font-family: var(--font-card);
+                    align-items: center;
+                    .image-2{
+                        width: 5rem;
+                        height: 5rem;
+                        border-radius: 50%;
+                    }
+
+                    .title__card{
+                        display: flex;
+                        flex-direction: column;
+                        
+                        span{
+                            font-size: 1.5rem;
+                            line-height: 3rem;
+                        }
+
+                        .span-gris{
+                            color: #9999;
+                        }
+                    }
+
+                }
+
+                .paragraph__card{
+                    font-size: 2rem;
+                    padding:2rem ;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
