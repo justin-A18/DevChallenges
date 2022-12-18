@@ -46,6 +46,9 @@ p, h2 {
   text-transform: uppercase;
   color: var(--text-color);
 }
+.container__nav .content__nav .burger {
+  display: none;
+}
 .container__nav .content__nav .nav__links {
   display: flex;
   gap: 5rem;
@@ -85,7 +88,7 @@ p, h2 {
 
 .container__principal {
   max-width: 100rem;
-  margin: 2rem auto;
+  margin: 8rem auto;
 }
 .container__principal .content__principal {
   display: flex;
@@ -112,7 +115,7 @@ p, h2 {
   text-decoration: none;
   display: flex;
   gap: 1rem;
-  padding-top: 5rem;
+  padding-top: 2rem;
   font-family: var(--font-card);
   color: white;
 }
@@ -164,11 +167,83 @@ p, h2 {
   font-weight: 700;
 }
 
-@media (max-width: 820px) {
+@media (max-width: 900px) {
+  .container__principal {
+    margin: 0 auto;
+  }
   .container__principal .content__principal {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .container__principal .content__principal .container__secondary {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .container__principal .content__principal .container__secondary .image__relative {
+    position: relative;
+    width: 40rem;
+  }
+  .container__principal .content__principal .container__secondary .image__relative .image-1 {
+    width: 100%;
+  }
+  .container__principal .content__principal .container__secondary .image__relative .card {
+    position: absolute;
+    bottom: -3rem;
+    right: 6rem;
+    background-color: black;
+    width: 35rem;
+    height: 18rem;
+    box-shadow: 0 0 10rem 0 rgba(0, 0, 0, 0.8);
+  }
+  .container__nav .content__nav {
+    display: flex;
+    flex-direction: row;
+  }
+  .container__nav .content__nav .nav__links {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 25rem;
+    height: 100vh;
+    z-index: 2;
+    justify-content: center;
+    position: fixed;
+    top: -2rem;
+    right: -250px;
+    align-items: center;
+    background: rgb(32, 32, 37);
+  }
+  .container__nav .content__nav .nav__links #cerrar {
+    position: absolute;
+    top: 1rem;
+    right: 3rem;
+    background-color: transparent;
+    fill: white;
+    width: 6rem;
+    border: thin solid transparent;
+    cursor: pointer;
+  }
+  .container__nav .content__nav .burger {
+    display: block;
+  }
+  .container__nav .content__nav .burger .btn-svg {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .container__nav .content__nav .burger .btn-svg svg {
+    fill: white;
+    width: 4rem;
+  }
+  .container__nav .content__nav .nav__logo .logo {
+    font-size: 2rem;
+    padding: 0.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--text-color);
+    border: thin solid transparent;
   }
 }
 

@@ -14,18 +14,26 @@
   <title>Web Responsive</title>
 </head>
 <body>
-  <div class="container__padre">
+  <div class="container__padre" id="container">
     <header class="container__nav">
       <nav class="content__nav">
         <div class="nav__logo">
           <a href="#" class="logo">this interior</a>
         </div>
         <ul class="nav__links" id="link-container">
+          <button id="cerrar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24";transform: ;msFilter:;"><path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path></svg>
+          </button>
           <li><a class="links" href="#">Home</a></li>
           <li><a class="links" href="#">collection</a></li>
           <li><a class="links" href="#">About</a></li>
           <li><a class="links" href="#">Contact</a></li>
         </ul>
+        <div class="burger">
+          <button class="btn-svg" id="burger">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24";"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+          </button>
+        </div>
       </nav>
     </header>
     <main class="container__principal">
@@ -58,7 +66,7 @@
         </article>
       </section>
     </main>
-    <footer></footer>
   </div>
+  <script src="./app.js"></script>
 </body>
 </html>
